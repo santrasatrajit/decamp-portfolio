@@ -1,5 +1,5 @@
 module DeviseWhitelist #name should match with file name.
-  extend ActiveSupport::concern
+  extend ActiveSupport::Concern
 
   included do
     before_action :configure_permitted_parameters, if: :devise_controller?
